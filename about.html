@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Tree2Hope</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/4x/logo.webp" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsiveness.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+
+    <div class="banner section">
+        <nav>
+            <div class="logo">
+                <a class="footerLinks" href="./index.html">
+                    <img src="./assets/images/4x/typography_logo.webp" alt="Logo" width="160px" />
+                </a>
+            </div>
+            <div id="nav-text" class="nav_buttons">
+                <a href="./index.html" class="nav_button">HOME</a>
+                <a href="./index.html#donates" class="nav_button showPopupButton">DONATE</a>
+                <a href="./about.html" class="nav_button">ABOUT US</a>
+                <a href="./index.html#footer" class="nav_button">CONTACT US</a>
+                <a href="./index.html#events" class="nav_button">EVENTS</a>
+            </div>
+        </nav>
+
+        <div class="MenuBar">
+            <i id="openMenu" class="bx bx-menu menu-button"></i>
+            <div class="menu-container" id="menuContainer">
+                <div class="menu">
+                    <span class="close-button" id="closeMenu">&times;</span>
+                    <ul>
+                        <li><a href="#" onclick="handleClose()">HOME</a></li>
+                        <li><a href="#donates" onclick="handleClose()">DONATE</a></li>
+                        <li><a href="./about.html" class="nav_button">ABOUT US</a></li>
+                        <li><a href="./contact.html" onclick="handleClose()">CONTACT US</a></li>
+                        <li><a href="#events" onclick="handleClose()">EVENTS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="container text mt-4">
+                <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center glass">
+                    <div class="col-12 col-lg-6 col-xl-5">
+                        <img class="img-fluid rounded" loading="lazy" src="./assets/images/School.webp" alt="About 1" />
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-7">
+                        <div class="row justify-content-xl-center">
+                            <div class="col-12 col-xl-11">
+                                <h2 class="mb-4">Who Are We?</h2>
+                                <p class="fs-6 mb-3">
+                                    Tree2Hope is a purpose-driven initiative committed to fostering global reforestation efforts and championing environmental stewardship. Our platform enables eco-conscious individuals and businesses to actively participate in the restoration of our planet's green spaces.
+                                </p>
+                                <p class="fs-6 mb-3">
+                                    For the low, low price of one dollar, you can choose a specific area in need of ecological attention and help fund the planting of a tree there, having an immediate and tangible effect on the world around you.
+                                </p>
+                                <p class="fs-6 mb-3">
+                                    Join us in our mission to create a sustainable and flourishing ecosystem that supports biodiversity and mitigates the effects of climate change for a brighter, greener future.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" id="footer">
+        <div class="upper_part">
+            <div class="upperHeading">
+                <h2 class="quick-links">Quick Links</h2>
+            </div>
+            <div class="links">
+                <div class="column">
+                    <a class="footerLinks" href="#">HOW TO DONATE</a>
+                    <a class="footerLinks" href="#">PRIVACY POLICY</a>
+                    <a class="footerLinks" href="#">REFUND POLICY</a>
+                    <a class="footerLinks" href="#">TERMS OF SERVICES</a>
+                </div>
+                <div class="column">
+                    <a class="footerLinks" href="#">OUR PARTNERS</a>
+                    <a class="footerLinks" href="#">BECOME AN AFFILIATE</a>
+                    <a class="footerLinks" href="#">SPONSOR US</a>
+                    <a class="footerLinks" href="#">REPORT A PROBLEM</a>
+                </div>
+                <div class="column">
+                    <a class="footerLinks" href="#">ABOUT US</a>
+                    <a class="footerLinks" href="#">FAQS</a>
+                    <a class="footerLinks" href="./contact.html">CONTACT US</a>
+                    <a class="footerLinks" href="#">CAREERS</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="social_medias">
+            <div class="imgWrapper">
+                <a href="https://twitter.com" class="socialmediaName" target="_blank"><i class="fa-brands fa-x-twitter"></i> <span>TWITTER</span></a>
+            </div>
+            <div class="imgWrapper">
+                <a href="https://www.facebook.com" class="socialmediaName" target="_blank"><i class="fa-brands fa-facebook"></i> <span>FACEBOOK</span></a>
+            </div>
+            <div class="imgWrapper">
+                <a href="https://www.instagram.com" class="socialmediaName" target="_blank"><i class="fa-brands fa-instagram"></i> <span>INSTAGRAM</span></a>
+            </div>
+            <div class="imgWrapper">
+                <a href="https://www.youtube.com" class="socialmediaName" target="_blank"><i class="fa-brands fa-youtube"></i> <span>YOUTUBE</span></a>
+            </div>
+            <div class="imgWrapper">
+                <a href="https://www.linkedin.com" class="socialmediaName" target="_blank"><i class="fa-brands fa-linkedin"></i> <span>LINKEDIN</span></a>
+            </div>
+            <div class="imgWrapper">
+                <a href="https://www.github.com" class="socialmediaName" target="_blank"><i class="fa-brands fa-github"></i> <span>GITHUB</span></a>
+            </div>
+        </div>
+        <div class="lower_part">
+            <div class="copyright-disclaimer">©2025 - Tree2Hope All rights reserved</div>
+        </div>
+    </div>
+
+    <div id="overlay" class="hidden"></div>
+    <div class="hidden popup">
+        <div class="popup-content">
+            <p>We haven't added this feature yet.</p>
+            <button class="closePopupButton">Close</button>
+        </div>
+    </div>
+    <script src="./scripts/about.js"></script>
+</body>
+</html>
